@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>丸い矢印付きの見出し</title>
+</head>
+<style>
+    h1.q1{
+        position: relative; 
+        padding-left: 25px;
+    }
+    .q1{
+      position: relative;
+      padding-left: 25px;
+    
+    }
+    .q1::before{
+        content: "";
+        position: absolute;
+        margin: auto;
+        top:0;
+        bottom: 0;
+        left: 3px;
+        width: 22px;
+        height: 23px;
+        border-radius: 50%;
+        background: #7af08c;
+
+    }
+    .q1::after{
+        content: "";
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 5px;
+        width: 10px;
+        height: 10px;
+        border-top: 3px solid #fff;
+        border-right: 3px solid #fff;
+        transform: rotate(45deg);
+    }
+    body{
+        background-color: #fff;
+        color: #666;
+        font-family: "メイリオ","MEiryo","MS Pゴシック","MS PGothic","ヒラギノ角ゴ Pro W3","HiraginoKaku Gothic Pro","Osaka,sans-serif";
+    }
+    h1{
+        font-family: "M PLU 1P",sans-serif;
+        color: #333;
+        font-size: 1.5rem;
+        line-height: 1.25;
+    }
+</style>
+<body>
+    <h４>問題１丸い矢印が付いたデザインを実現しましょう。</h４>
+    <h1 class="q1">丸い矢印付きの見出し</h1>
+
+</body>
+</html>
