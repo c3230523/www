@@ -1,26 +1,40 @@
 <!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sample</title>
+    <title>Responsive Design Practice</title>
     <style>
+      body{
+        background-color: #199edb;
+      }
       div {
         font-size: 2rem;
-        text-align: center;
         margin: 10px;
         padding: 10px;
       }
 
       .parent {
-        background: lightblue;
+   
         display: flex;
       }
 
-      .child {
-        background: lightgreen;
-        width: 150px;
+      .child1 {
+
+            background-color: #e6f7ff;
+            box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
       }
+      .child2{
+
+            background-color: #fff2e6;
+            box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .child3{
+
+            background-color: #f9e6ff;
+            box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+        }
 
       @media screen and (max-width: 800px) {
         .parent {
@@ -36,12 +50,34 @@
     </style>
   </head>
   <body>
+    <h1>Responsive Design Practice</h1>
     <div class="parent">
-      <div class="child">あ</div>
-      <div class="child">い</div>
-      <div class="child">う</div>
-      <div class="child">え</div>
-      <div class="child">お</div>
+      <div class="child1">
+        <h2>Section1</h2>
+        <P>This is the fist Section. It has a light background,
+            padding margin and a box shdow. The layout adjusts 
+            responsively to different screen sies.
+        </P>
+        <img src="images/Section1.jpg" width="40%">
+      </div>
+
+      <div class="child2">
+        <h2>Section2</h2>
+        <P>This is the second Section. It has light orange background,
+            padding margin, and a box shadow. The layout adjusts
+            responsively to different screen size.
+        </P>
+        <img src="images/Section2.jpg" width="40%">
+      </div>
+      <div class="child3">
+        <h2>Section3</h2>
+        <P>This is the third Section. It has a light purple background,
+            padding, margin, and a dox  shadow. Thy layout adjusts
+            responsively to different screen size.
+        </P>
+        <img src="images/section3.jpg" width="40%">
+      </div>
+
     </div>
   </body>
 </html>
