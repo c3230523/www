@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+ <html lang="ja">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Practice</title>
+    <style>
+      .profile{
+            display: flex;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #88b4db;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #header{
+        padding: 1px;
+      }
+      
+
+
+
+        .profile-card0 {
+          background-color: #e6f7ff;
+            border-radius: 0px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.614);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 300px;
+            margin: 30px;
+        }
+
+        .profile-card2 {
+          background-color: #fff2e6;
+            border-radius: 0px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.614);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 300px;
+            margin: 30px;
+        }
+
+        .profile-card3 {
+          background-color: #f9e6ff;
+            border-radius: 0px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.614);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 300px;
+            margin: 30px;
+        }
+
+
+        @media (max-width: 768px) {
+            .profile-card {
+                width: 90%;
+            }
+        }
+        @media screen and (max-width: 800px) {
+            .profile {
+          flex-wrap: wrap;
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        .profile  {
+          display: block;
+        }
+      }
+
+
+
+    </style>
+
+ </head>
+
+ <body>
+
+  <div id="header">
+     
+    <h1> Responsive Design Practice</h1>
+  
+ </div>
+
+
+    <div class="profile">
+
+    <div class="profile-card0">
+               <h2>Section1</h2>
+        <P>This is the fist Section. It has a light background,
+            padding margin and a box shdow. The layout adjusts 
+            responsively to different screen sies.
+        </P>
+        <img src="images/section1.jpg" width="40%">
+        </div>
+        
+  
+
+    <div class="profile-card2">
+          <h2>Section2</h2>
+          <P>This is the second Section. It has light orange background,
+              padding margin, and a box shadow. The layout adjusts
+              responsively to different screen size.
+          </P>
+          <img src="images/section2.jpg" width="40%">
+        </div>
+
+    <div class="profile-card3">
+      <h2>Section3</h2>
+      <P>This is the third Section. It has a light purple background,
+          padding, margin, and a dox  shadow. Thy layout adjusts
+          responsively to different screen size.
+      </P>
+      <img src="images/section3.jpg" width="40%">
+    </div>
+    </div>
+ </body>
+ </html>
